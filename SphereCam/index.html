@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<title>Webcam Texture (Three.js)</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				font-family: Monospace;
+				font-weight: bold;
+				background-color: #ccccff;
+				margin: 0px;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+
+		<p id="errorMessage"></p>
+
+		<!-- form for saving canvas as image using save.php -->
+		<form method="POST" enctype="multipart/form-data" action="save.php" id="myForm">
+    		<input type="hidden" name="img_val" id="img_val" value="" />
+		</form>
+
+		<!--monitor is the video webcam element-->
+		<video id="monitor" autoplay width="640" height="480" style="visibility: hidden; float:left;"></video>
+		<!--videoImage is the canvas copy of the video element-->
+		<canvas id="videoImage" width="640" height="480" style="visibility: hidden; float:left;"></canvas>
+
+		<div id="ThreeJS" style="position: absolute; left:0px; top:0px"></div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/three.min.js"></script>
+	<script src="js/CSS3DRenderer.js"></script>
+	<script src="js/Detector.js"></script>
+	<script src="js/OrbitControls.js"></script>
+	<script src="js/THREEx.FullScreen.js"></script>
+	<script src="js/THREEx.WindowResize.js"></script>
+	<script src="js/html2canvas.js"></script>
+	<script src="js/jquery.plugin.html2canvas.js"></script>
+	<script src="js/facepp-sdk.min.js"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+
+</html>
