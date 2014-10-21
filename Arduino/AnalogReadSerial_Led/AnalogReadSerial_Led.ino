@@ -9,8 +9,8 @@
 
 int ledPin = 9;
 int brightness = 0;
-int sensorLow = 15;
-int sensorHigh = 150;
+int sensorLow = 0;
+int sensorHigh = 1024;
 
 // the setup routine runs once when you press reset:
 void setup() {
